@@ -1,0 +1,66 @@
+{
+   "AllContentBindings": {
+      "Key": "Guid",
+      "Value": ""
+   },
+   "AllInfoActors": {
+      "Key": "Guid",
+      "Value": ""
+   },
+   "BindingIdToReferences": {
+      "Key": "Guid",
+      "Value": ""
+   },
+   "BoundActorComponents": {
+      "Key": "Guid",
+      "Value": ""
+   },
+   "CurveConversionAssetMap": {
+      "Key": "",
+      "Value": "SoftObjectPath"
+   },
+   "Hierarchy": {
+      "Key": "MovieSceneSequenceID",
+      "Value": ""
+   },
+   "ServiceLocations": {
+      "Key": "",
+      "Value": "Vector"
+   },
+   "SoftwareCursors": {
+      "Key": "",
+      "Value": "SoftClassPath"
+   },
+   "StrToVec": {
+      "Key": "",
+      "Value": "Vector"
+   },
+   "SubSectionRanges": {
+      "Key": "Guid",
+      "Value": "MovieSceneFrameRange"
+   },
+   "SubSequences": {
+      "Key": "MovieSceneSequenceID",
+      "Value": ""
+   },
+   "TierColors": {
+      "Key": "",
+      "Value": "LinearColor"
+   },
+   "TrackSignatureToTrackIdentifier": {
+      "Key": "Guid",
+      "Value": "MovieSceneTrackIdentifier"
+   },
+   "Tracks": {
+      "Key": "MovieSceneTrackIdentifier",
+      "Value": ""
+   },
+   "UserParameterRedirects": {
+      "Key": "NiagaraVariable",
+      "Value": "NiagaraVariable"
+   },
+   "VectorParameterValues": {
+      "Key": "",
+      "Value": "LinearColor"
+   }
+}

@@ -1,0 +1,2 @@
+- Tested fairly extensively on Steam
+- Gamepass has a unique GUObjectHashTables signature - still requires the others

@@ -1,0 +1,14 @@
+---@meta
+
+---@class FS_PhotoModeIsOnConfis
+---@field ['ShowwarningwhentheHUDishidden?_19_B5804F54419A6DAEFC0A5B9EC784A345'] boolean
+---@field WarningText_23_B00D0C014907509EE32E7D8AA6C2CED6 FText
+---@field TextSize_5_6EFA746B43641E2BC49678BE15533B7A int32
+---@field TextColorandOpacity_24_B25E83BD4ECD36693CD0C78FD4A51815 FSlateColor
+---@field Image_25_AD16A238453EA2F40937E08DAACC8F51 UTexture2D
+---@field ImageSize_15_8E07E4E14821422EC49BF3B1F30F7913 FVector2D
+---@field ImageTint_13_3F3D0A0F4ADE39A55DB656BC5930B61A FSlateColor
+local FS_PhotoModeIsOnConfis = {}
+
+
+

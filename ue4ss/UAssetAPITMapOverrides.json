@@ -1,0 +1,66 @@
+{
+   "AllContentBindings": [
+      "Guid",
+      null
+   ],
+   "AllInfoActors": [
+      "Guid",
+      null
+   ],
+   "BindingIdToReferences": [
+      "Guid",
+      null
+   ],
+   "BoundActorComponents": [
+      "Guid",
+      null
+   ],
+   "CurveConversionAssetMap": [
+      null,
+      "SoftObjectPath"
+   ],
+   "Hierarchy": [
+      "MovieSceneSequenceID",
+      null
+   ],
+   "ServiceLocations": [
+      null,
+      "Vector"
+   ],
+   "SoftwareCursors": [
+      null,
+      "SoftClassPath"
+   ],
+   "StrToVec": [
+      null,
+      "Vector"
+   ],
+   "SubSectionRanges": [
+      "Guid",
+      "MovieSceneFrameRange"
+   ],
+   "SubSequences": [
+      "MovieSceneSequenceID",
+      null
+   ],
+   "TierColors": [
+      null,
+      "LinearColor"
+   ],
+   "TrackSignatureToTrackIdentifier": [
+      "Guid",
+      "MovieSceneTrackIdentifier"
+   ],
+   "Tracks": [
+      "MovieSceneTrackIdentifier",
+      null
+   ],
+   "UserParameterRedirects": [
+      "NiagaraVariable",
+      "NiagaraVariable"
+   ],
+   "VectorParameterValues": [
+      null,
+      "LinearColor"
+   ]
+}

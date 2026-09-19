@@ -1,0 +1,15 @@
+---@meta
+
+---@class FDistanceField
+---@field DistanceFields_108_B30D908742D58BF702D748B29927BD2E boolean
+---@field Coastlineheight_111_AC647E804AD8FF66DC479DBEE451B83D float
+---@field CoastlineFoam_110_4F9D23C74A1DC02DE793A3AD6E40023D float
+---@field SoftenEdge_93_4ABF1B6A4A8BFBB5C1A6D8AE825277A5 float
+---@field MaskDistance_112_2ECEF02F4AA550E6B5F9DCA688C5B8DF float
+---@field MaskPower_115_7FA5A2E847D517627323CA81ABB89237 float
+---@field Volume_122_07F12DCA4291FB96402844B56343E1EC boolean
+---@field CalculateVolume_119_8FCF794B482207088E72CB889DD10DC2 float
+local FDistanceField = {}
+
+
+

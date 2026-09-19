@@ -1,0 +1,12 @@
+---@meta
+
+---@class FLandmarksSlideshow_STRUCT
+---@field Image_20_020D8E0E40E5A62F49D3EFA9A491385A UTexture2D
+---@field Flag_16_B3D653D44148623A7E680FB7D0DCD379 TSoftObjectPtr<UTexture2D>
+---@field Name_6_3516D3704E619E29C8A655AC0FD98FC0 FText
+---@field Price_9_655ECDBE456BC25B3E3B59801A58B3C6 int32
+---@field ReqBlueprints_13_8BEA08E944048206B326BEAF37B34B73 int32
+local FLandmarksSlideshow_STRUCT = {}
+
+
+

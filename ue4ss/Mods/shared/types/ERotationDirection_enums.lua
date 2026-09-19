@@ -1,0 +1,9 @@
+---@enum ERotationDirection
+local ERotationDirection = {
+    NewEnumerator0 = 0,
+    NewEnumerator1 = 1,
+    NewEnumerator2 = 2,
+    NewEnumerator3 = 3,
+    ERotationDirection_MAX = 4,
+}
+

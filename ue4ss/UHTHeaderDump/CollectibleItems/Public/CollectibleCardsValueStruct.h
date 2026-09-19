@@ -1,0 +1,14 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "CollectibleCardsValueStruct.generated.h"
+
+USTRUCT(BlueprintType)
+struct FCollectibleCardsValueStruct {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    int32 Strength;
+    
+    COLLECTIBLEITEMS_API FCollectibleCardsValueStruct();
+};
+

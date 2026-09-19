@@ -1,0 +1,80 @@
+---@meta
+
+---@class UControlsOverviewWidgetBP_C : UInteractableMenuWidgetBP_C
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ApplyButton UNavigationKeyButton_C
+---@field BackButton UNavigationKeyButton_C
+---@field ControlsVerticalBox UVerticalBox
+---@field DecisionDialogWidgetBP UDecisionDialogWidgetBP_C
+---@field GamepadBindingsOptionsButton UOptionsButton_C
+---@field Image_96 UImage
+---@field InspectModeToggleOptionsPicker UOptionsPicker_C
+---@field InvertXOptionsPicker UOptionsPicker_C
+---@field InvertYOptionsPicker UOptionsPicker_C
+---@field KeyBindingsOptionsButton UOptionsButton_C
+---@field LeftBorder UBorder
+---@field LeftTitleBorder UBorder
+---@field MenuCanvasPanel UCanvasPanel
+---@field MenuTitleText UTextBlock
+---@field ResetButton UNavigationKeyButton_C
+---@field RightBorder UBorder
+---@field RightTitleBorder UBorder
+---@field RumbleOptionsPicker UOptionsPicker_C
+---@field SelectedOptionDescription UTextBlock
+---@field SelectedOptionName UTextBlock
+---@field SprintToggleOptionPicker UOptionsPicker_C
+---@field XSensitivityOptionsSlider UOptionsSlider_C
+---@field YSensitivityOptionsSlider UOptionsSlider_C
+---@field ControlsSettingsWidgetBP UControlsSettingsContainerWidgetBP_C
+local UControlsOverviewWidgetBP_C = {}
+
+function UControlsOverviewWidgetBP_C:RumblePreview() end
+function UControlsOverviewWidgetBP_C:RumbleOptionChanged() end
+function UControlsOverviewWidgetBP_C:SetGlobalSettings() end
+---@param InWidget UInteractableUserWidget_C
+function UControlsOverviewWidgetBP_C:UpdateDescription(InWidget) end
+function UControlsOverviewWidgetBP_C:ShowDecisionDialog() end
+---@param NavigateFromMenu UInteractableMenuWidgetBP_C
+---@param bIsGamepadBeingUsed boolean
+function UControlsOverviewWidgetBP_C:OnNavigationEnter(NavigateFromMenu, bIsGamepadBeingUsed) end
+---@param NavigateToMenu UInteractableMenuWidgetBP_C
+---@param NavigateFromMenu UInteractableMenuWidgetBP_C
+function UControlsOverviewWidgetBP_C:OnNavigationExit(NavigateToMenu, NavigateFromMenu) end
+---@param ActiveIndex int32
+function UControlsOverviewWidgetBP_C:BndEvt__InvertXOptionsPicker_K2Node_ComponentBoundEvent_1_OnOptionChanged__DelegateSignature(ActiveIndex) end
+---@param ActiveIndex int32
+function UControlsOverviewWidgetBP_C:BndEvt__InvertYOptionsPicker_K2Node_ComponentBoundEvent_2_OnOptionChanged__DelegateSignature(ActiveIndex) end
+function UControlsOverviewWidgetBP_C:BndEvt__XSensitivityOptionsSlider_K2Node_ComponentBoundEvent_3_OnOptionChanged__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__YSensitivityOptionsSlider_K2Node_ComponentBoundEvent_4_OnOptionChanged__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__KeyBindingsOptionsButton_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__GamepadBindingsOptionsButton_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__BackButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:OnPressedBack() end
+function UControlsOverviewWidgetBP_C:BndEvt__InvertXOptionsPicker_K2Node_ComponentBoundEvent_7_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__InvertYOptionsPicker_K2Node_ComponentBoundEvent_8_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__XSensitivityOptionsSlider_K2Node_ComponentBoundEvent_9_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__YSensitivityOptionsSlider_K2Node_ComponentBoundEvent_10_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__KeyBindingsOptionsButton_K2Node_ComponentBoundEvent_11_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__GamepadBindingsOptionsButton_K2Node_ComponentBoundEvent_12_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__ApplyButton_K2Node_ComponentBoundEvent_13_OnClicked__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__ResetButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:OnGlobalSettingsApply() end
+function UControlsOverviewWidgetBP_C:BndEvt__DecisionDialogWidgetBP_K2Node_ComponentBoundEvent_15_DecisionAccept__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__DecisionDialogWidgetBP_K2Node_ComponentBoundEvent_16_DecisionDecline__DelegateSignature() end
+---@param IsDesignTime boolean
+function UControlsOverviewWidgetBP_C:PreConstruct(IsDesignTime) end
+function UControlsOverviewWidgetBP_C:OnPressedReset() end
+function UControlsOverviewWidgetBP_C:OnPressedSelect() end
+---@param ActiveIndex int32
+function UControlsOverviewWidgetBP_C:BndEvt__RumbleOptionsPicker_K2Node_ComponentBoundEvent_17_OnOptionChanged__DelegateSignature(ActiveIndex) end
+function UControlsOverviewWidgetBP_C:BndEvt__RumbleOptionsPicker_K2Node_ComponentBoundEvent_19_OnFocussed__DelegateSignature() end
+---@param ActiveIndex int32
+function UControlsOverviewWidgetBP_C:BndEvt__DisableController_K2Node_ComponentBoundEvent_18_OnOptionChanged__DelegateSignature(ActiveIndex) end
+function UControlsOverviewWidgetBP_C:BndEvt__DisableController_K2Node_ComponentBoundEvent_20_OnFocussed__DelegateSignature() end
+function UControlsOverviewWidgetBP_C:BndEvt__ControlsOverviewWidgetBP_InspectModeToggleOptionsPicker_K2Node_ComponentBoundEvent_21_OnFocussed__DelegateSignature() end
+---@param ActiveIndex int32
+function UControlsOverviewWidgetBP_C:BndEvt__ControlsOverviewWidgetBP_InspectModeToggleOptionsPicker_K2Node_ComponentBoundEvent_22_OnOptionChanged__DelegateSignature(ActiveIndex) end
+---@param EntryPoint int32
+function UControlsOverviewWidgetBP_C:ExecuteUbergraph_ControlsOverviewWidgetBP(EntryPoint) end
+
+

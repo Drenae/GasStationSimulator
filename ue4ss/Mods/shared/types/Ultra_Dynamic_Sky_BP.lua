@@ -1,0 +1,210 @@
+---@meta
+
+---@class AUltra_Dynamic_Sky_BP_C : AActor
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ['CubeMap_Sky Light'] USkyLightComponent
+---@field ['Capture Based Sky Light'] USkyLightComponent
+---@field Exposure UPostProcessComponent
+---@field HeightFog UExponentialHeightFogComponent
+---@field Moon UDirectionalLightComponent
+---@field Sun UDirectionalLightComponent
+---@field SkyAtmosphere USkyAtmosphereComponent
+---@field Moon_Root UArrowComponent
+---@field Sun_Root UArrowComponent
+---@field Ultra_Dynamic_Sky_Sphere UStaticMeshComponent
+---@field DefaultSceneRoot USceneComponent
+---@field ['Sun Light'] UDS_FeatureToggle::Type
+---@field ['Custom Sun Light Actor'] ADirectionalLight
+---@field Sun_Mobility EComponentMobility::Type
+---@field Sky_MID UMaterialInstanceDynamic
+---@field ['Refresh Settings'] boolean
+---@field ['Cloud Speed'] float
+---@field ['Cloud Wisps Opacity'] float
+---@field ['Horizon Base Color Curve'] TArray<UCurveLinearColor>
+---@field ['Zenith Base Color Curve'] TArray<UCurveLinearColor>
+---@field ['Cloud Light Color Curve'] TArray<UCurveLinearColor>
+---@field ['Cloud Dark Color Curve'] TArray<UCurveLinearColor>
+---@field ['Time of Day'] float
+---@field ['Sun Color Curve'] TArray<UCurveLinearColor>
+---@field ['Shine Intensity Curve'] UCurveFloat
+---@field ['Cloud Density'] float
+---@field ['Overall Intensity'] float
+---@field Saturation float
+---@field ['Sun Cloudy Color Curve'] UCurveLinearColor
+---@field ['Stars Intensity Curve'] UCurveFloat
+---@field ['Cloud Direction'] float
+---@field ['Cloud Phase'] float
+---@field ['Moon Casts Shadows'] boolean
+---@field ['Moon Scale'] float
+---@field ['Moon Inclination'] float
+---@field ['Moon Phase'] float
+---@field ['Automatically Set Advanced Settings using Time of Day'] boolean
+---@field ['Stars Visibility'] float
+---@field ['Change Moon Phase Once a Day'] boolean
+---@field ['Moon Intensity'] float
+---@field ['Moon Position'] float
+---@field ['Sun Angle'] float
+---@field ['Horizon Base Color'] FLinearColor
+---@field ['Zenith Base Color'] FLinearColor
+---@field ['Cloud Light Color'] FLinearColor
+---@field ['Cloud Dark Color'] FLinearColor
+---@field ['Sun Color'] FLinearColor
+---@field ['Cloud Shine Intensity'] float
+---@field ['Sun Light Color'] FLinearColor
+---@field ['Animate Time of Day'] boolean
+---@field ['Day Length'] float
+---@field ['Moon Position Curve'] UCurveFloat
+---@field ['Night Length'] float
+---@field ['Cloud Density_target'] float
+---@field Contrast float
+---@field ['Sun Casts Shadows'] boolean
+---@field ['Sun Disk Intensity'] float
+---@field ['Sun Shader Intensity'] float
+---@field ['Moon Color'] FLinearColor
+---@field ['Shine Variation'] float
+---@field ['Soften Cloud Layer 1'] float
+---@field ['Soften Cloud Layer 2'] float
+---@field ['Sharpen Outer Edge'] float
+---@field ['Sun Lighting Intensity'] float
+---@field ['Sun Highlight Radius_curve'] UCurveFloat
+---@field ['Sun Highlight Radius'] float
+---@field ['First Day'] boolean
+---@field Stars_Intensity float
+---@field Stars_Color FLinearColor
+---@field ['Moon Orbit Offset'] float
+---@field ['Automatically Set Sun Light Rotation'] boolean
+---@field ['Sun Rotation'] FRotator
+---@field ['Sun Radius'] float
+---@field ['Cloud Shadows MID'] UMaterialInstanceDynamic
+---@field ['Use Cloud Shadows'] boolean
+---@field ['Cloud Shadows Scale'] float
+---@field ['Cloud Shadows Intensity'] float
+---@field ['Moon Light'] UDS_FeatureToggle::Type
+---@field ['Custom Moon Light Actor'] ADirectionalLight
+---@field ['Manually Select Sun Color'] boolean
+---@field ['Automatically Set Moon Light Rotation'] boolean
+---@field ['Moonlight Intensity'] float
+---@field ['Stars Speed'] float
+---@field ['Sun Inclination'] float
+---@field ['Sun Yaw'] float
+---@field ['Moon Rotation'] float
+---@field ['Custom Moon Texture'] UTexture2D
+---@field ['Use Custom Moon Texture'] boolean
+---@field Moon_Mobility EComponentMobility::Type
+---@field Sky_Light UDS_FeatureToggle::Type
+---@field ['Custom Sky Light Actor'] ASkyLight
+---@field Sky_Light_Mobility EComponentMobility::Type
+---@field ['Height Fog'] UDS_FeatureToggle::Type
+---@field ['Custom Height Fog Actor'] AExponentialHeightFog
+---@field ['Sky Light Mode'] UDS_SkyLightMode::Type
+---@field ['Night Filter Curve'] UCurveFloat
+---@field ['Moon Glow Intensity'] float
+---@field Directional_Intensity_Curve UCurveFloat
+---@field Sun_Light_Intensity float
+---@field ['Aurora Intensity'] float
+---@field ['Aurora Speed'] float
+---@field ['Use Auroras'] boolean
+---@field ['Cloud Shadows Softness'] float
+---@field ['Cloud Shadows Extra Intensity When Overcast'] float
+---@field ['Cloud Shadows Extra Softness When Overcast'] float
+---@field ['Cloud Tiling_Layer 1'] float
+---@field ['Cloud Tiling_Layer 2'] float
+---@field ['One cloud layer'] boolean
+---@field ['Cloud Height Layer 1'] float
+---@field ['Cloud Height Layer 2'] float
+---@field ['Overcast Swirling Texture'] float
+---@field ['Animate Cloud Density'] boolean
+---@field ['Cloud Density Change Speed (When Animated)'] float
+---@field ['Minimum Cloud Density (When Animated)'] float
+---@field ['Maximum Cloud Density (When Animated)'] float
+---@field ['Dawn Time'] float
+---@field ['Dusk Time'] float
+---@field ['Use Sky Atmosphere to Determine Colors'] boolean
+---@field ['Night brightness'] float
+---@field ['Color Scheme'] int32
+---@field ['Moon Angle'] float
+---@field Sun_Volumetric_Scattering_Intensity float
+---@field Moon_Volumetric_Scattering_Intensity float
+---@field ['Aurora Phase'] float
+---@field ['Stars Phase'] float
+---@field Readme FString
+---@field Sun_LightComponent ULightComponent
+---@field Moon_LightComponent ULightComponent
+---@field SkyLightComponent USkyLightComponent
+---@field ['Height Fog Component'] UExponentialHeightFogComponent
+---@field Use_Exposure_Range boolean
+---@field Exposure_Min float
+---@field Exposure_Max float
+---@field TimeRandomOffset float
+---@field ['Extend Dawn and Dusk'] float
+---@field ['Move_Static/Stationary_Lights'] boolean
+---@field Start_Raining FUltra_Dynamic_Sky_BP_CStart_Raining
+---@field Stop_Raining FUltra_Dynamic_Sky_BP_CStop_Raining
+---@field Raining boolean
+---@field Rain_Event_Threshold float
+---@field Fog_Inscattering_Color_Curve UCurveLinearColor
+---@field Fog_Directional_Inscattering_Color_Curve UCurveLinearColor
+---@field Stars_Tiling float
+---@field ['Stars Texture'] UTexture2D
+---@field ['Night Sky Glow'] float
+---@field ['Night Sky Glow Color'] FLinearColor
+---@field ['Sky Light Intensity'] float
+---@field ['Cubemap for Dynamic Color Tinting'] UTextureCube
+---@field ['Sky Light Dynamic Tinting Color Curve'] UCurveLinearColor
+---@field ['Custom Cubemap'] UTextureCube
+---@field ['Sky Light Color'] FLinearColor
+---@field ['Sky Light Lower Hemisphere Color'] FLinearColor
+---@field ['Recapture Sky light Periodically'] boolean
+---@field ['Sky Light Recapture Period (Seconds)'] float
+---@field ['Sunrise Event Time'] float
+---@field ['Sunset Event Time'] float
+---@field Sunset FUltra_Dynamic_Sky_BP_CSunset
+---@field Sunrise FUltra_Dynamic_Sky_BP_CSunrise
+---@field ['Use Fog Density Curve'] boolean
+---@field ['Fog Density Curve'] UCurveFloat
+---@field ['Internal Time of Day'] float
+---@field Horizon_Density_Multiplier float
+---@field Zenith_Density_Multiplier float
+---@field Latitude_Gradient_Position float
+---@field Latitude_Gradient_Width float
+---@field Around_Sun_Density_Multiplier float
+---@field Around_Sun_Density_Exponent float
+---@field Around_Moon_Density_Multiplier float
+---@field Around_Moon_Density_Exponent float
+---@field ['Cloud Wisps Texture'] UTexture2D
+---@field Aurora_Color_Gradient_Texture UTexture2D
+---@field ['Cloud Noise Type'] UDS_NoiseType::Type
+---@field ['Custom Noise Texture'] UTexture
+---@field ['High Frequency Noise'] float
+---@field ['Cloud Opacity'] float
+---@field Sun_Vertical_Offset float
+---@field ['Moon Vertical Offset'] float
+---@field Directional_Lights_Absent_Brightness float
+---@field Sun_Highlight_Intensity_Curve UCurveFloat
+---@field GameStateCodeRef AGSSGameState
+---@field Electric UCurveFloat
+---@field TimeSinceLastMaterialUpdate float
+local AUltra_Dynamic_Sky_BP_C = {}
+
+---@param Time_Code FTimecode
+AUltra_Dynamic_Sky_BP_C['Set Time of Day using Time Code'] = function(self, Time_Code) end
+---@param Time FTimecode
+AUltra_Dynamic_Sky_BP_C['Get Time of Day in Real Time Format'] = function(self, Time) end
+AUltra_Dynamic_Sky_BP_C['Set Material Variables'] = function(self, ) end
+---@param Move_Static_Lights boolean
+AUltra_Dynamic_Sky_BP_C['Set Sun and Moon Rotation'] = function(self, Move_Static_Lights) end
+function AUltra_Dynamic_Sky_BP_C:UserConstructionScript() end
+---@param DeltaSeconds float
+function AUltra_Dynamic_Sky_BP_C:ReceiveTick(DeltaSeconds) end
+function AUltra_Dynamic_Sky_BP_C:ReceiveBeginPlay() end
+function AUltra_Dynamic_Sky_BP_C:Midnight() end
+---@param bIsOpen boolean
+function AUltra_Dynamic_Sky_BP_C:BndEvt__Ultra_Dynamic_Sky_BP_GameStateCodeRef_K2Node_ComponentBoundEvent_0_GastStationOpened__DelegateSignature(bIsOpen) end
+---@param EntryPoint int32
+function AUltra_Dynamic_Sky_BP_C:ExecuteUbergraph_Ultra_Dynamic_Sky_BP(EntryPoint) end
+function AUltra_Dynamic_Sky_BP_C:Sunrise__DelegateSignature() end
+function AUltra_Dynamic_Sky_BP_C:Sunset__DelegateSignature() end
+function AUltra_Dynamic_Sky_BP_C:Stop_Raining__DelegateSignature() end
+function AUltra_Dynamic_Sky_BP_C:Start_Raining__DelegateSignature() end
+
+

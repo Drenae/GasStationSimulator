@@ -1,0 +1,89 @@
+---@meta
+
+---@class UWBP_MagazineThief_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ConstructAnim UWidgetAnimation
+---@field BackgroundBlocker_IMG UImage
+---@field BikerOverlay UOverlay
+---@field Chunchumanchu_Overlay UOverlay
+---@field ChunchumanchuRageTxt_1 UTextBlock
+---@field Denis_IMG UImage
+---@field DenisLootScrollBox UScrollBox
+---@field DenisOverlay UOverlay
+---@field DragoButton_129 UDragoButton
+---@field ExitIcon_IMG UImage
+---@field Image UImage
+---@field Image_88 UImage
+---@field Image_134 UImage
+---@field Image_165 UImage
+---@field Image_365 UImage
+---@field LootScrollBoxBiker_1 UScrollBox
+---@field LootScrollBoxChunchumanchu UScrollBox
+---@field MoreInfoWerehouseTXT UTextBlock
+---@field TaskBackButton UButton
+---@field TextBlock UTextBlock
+---@field TextBlock_97 UTextBlock
+---@field WBP_ItemLootInfo UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_1 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_2 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_3 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_4 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_5 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_6 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_7 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_8 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_9 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_10 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_11 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_12 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_13 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_14 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_15 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_16 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_17 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_18 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_19 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_20 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_21 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_22 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_23 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_24 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_25 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_26 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_27 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_28 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_29 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_30 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_31 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_32 UWBP_ItemLootInfo_C
+---@field WBP_ItemLootInfo_33 UWBP_ItemLootInfo_C
+---@field WBP_KeyBindedAction UWBP_KeyBindedAction_C
+---@field ThiefType ThiefType::Type
+---@field DecorationFireClass TSubclassOf<ADecorationFire_C>
+---@field ChunchumanchuRage int32
+---@field ChunchumanchuRageText FText
+---@field LootScrollBoxToUse UPanelWidget
+---@field IsDecorationBurnPending boolean
+---@field DecorationsToBurn TArray<APlaceableActor>
+---@field MoneyTook float
+local UWBP_MagazineThief_C = {}
+
+function UWBP_MagazineThief_C:StealSpecificCategoryItems() end
+function UWBP_MagazineThief_C:StealBikerProducts() end
+---@param PercentOfAmmount float
+---@param Stealed1 boolean
+function UWBP_MagazineThief_C:StealProducts(PercentOfAmmount, Stealed1) end
+function UWBP_MagazineThief_C:Construct() end
+function UWBP_MagazineThief_C:ListenInput() end
+function UWBP_MagazineThief_C:Remove() end
+function UWBP_MagazineThief_C:BndEvt__TaskBackButton_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature() end
+function UWBP_MagazineThief_C:BndEvt__TaskBackButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature() end
+function UWBP_MagazineThief_C:BndEvt__TaskBackButton_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature() end
+function UWBP_MagazineThief_C:Destruct() end
+---@param ActionName FName
+function UWBP_MagazineThief_C:OnKeyChange(ActionName) end
+function UWBP_MagazineThief_C:OnKeyReset() end
+---@param EntryPoint int32
+function UWBP_MagazineThief_C:ExecuteUbergraph_WBP_MagazineThief(EntryPoint) end
+
+

@@ -1,0 +1,162 @@
+---@meta
+
+---@class UPC_Scores_C : UPcBaseTab
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Cash_Register_TXT UTextBlock
+---@field CashRegister UDragoButton
+---@field Friends_Button UDragoButton
+---@field friends_text UTextBlock
+---@field fueling UDragoButton
+---@field Fueling_TXT UTextBlock
+---@field FuelingText UTextBlock
+---@field Image UImage
+---@field Image_3 UImage
+---@field Image_4 UImage
+---@field Image_191 UImage
+---@field Image_246 UImage
+---@field Image_448 UImage
+---@field money UDragoButton
+---@field Money_TXT_1 UTextBlock
+---@field MoneyText UTextBlock
+---@field Near_Button UDragoButton
+---@field near_text UTextBlock
+---@field PlayerScoreSpot UWBP_ScoreBoard_C
+---@field Popularity UDragoButton
+---@field Popularity_TXT_1 UTextBlock
+---@field PopularityText UTextBlock
+---@field Racing UDragoButton
+---@field Racing2_TXT_3 UTextBlock
+---@field Racing2Text UTextBlock
+---@field Racing_TXT UTextBlock
+---@field RacingSecondMap UDragoButton
+---@field RacingText UTextBlock
+---@field ScoresScroll UScrollBox
+---@field ScoreWrap_BOX UWrapBox
+---@field THROPHY_1 UImage
+---@field Throwing UDragoButton
+---@field Throwing_TXT_1 UTextBlock
+---@field ThrowingText UTextBlock
+---@field WBP_KeyHint_LeftMove UWBP_KeyHint_C
+---@field WBP_KeyHint_LeftShoulder UWBP_KeyHint_C
+---@field WBP_KeyHint_Up_RightMove UWBP_KeyHint_C
+---@field WBP_KeyHint_Up_RightShoulder UWBP_KeyHint_C
+---@field WBP_ScoreBoard UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_1 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_2 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_3 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_4 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_5 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_6 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_7 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_8 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_9 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_10 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_11 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_12 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_13 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_14 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_15 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_16 UWBP_ScoreBoard_C
+---@field WBP_ScoreBoard_159 UWBP_ScoreBoard_C
+---@field World_Button UDragoButton
+---@field world_text UTextBlock
+---@field DetailsToUpdate TArray<int32>
+---@field bDrawEntries boolean
+---@field LeadearboarsEntriesToDraw TArray<FEOSLeaderboardEntry>
+---@field ActiveLeaderboardFilter ELeaderboardDataType
+---@field StartRange int32
+---@field ActiveScoreMinigame EMinigame
+---@field EndRange int32
+---@field MiddleSegmentElements TArray<UDragoButton>
+---@field keySelected1 int32
+---@field miniGameButton TArray<UDragoButton>
+---@field keySelected2 int32
+---@field ActiveFilterType ELeaderboardDataType
+---@field ActiveGame EMinigame
+---@field LeaderboardNames TArray<FString>
+---@field LederboardIndex int32
+---@field viewArray TArray<UWBP_ScoreBoard_C>
+---@field selectRow int32
+---@field GamePadMiniGameIndex int32
+---@field GamePadScoreIndex int32
+---@field GamePadMiddleIndex int32
+local UPC_Scores_C = {}
+
+---@param MyGeometry FGeometry
+---@param InKeyEvent FKeyEvent
+---@return FEventReply
+function UPC_Scores_C:OnPreviewKeyDown(MyGeometry, InKeyEvent) end
+---@param Visible boolean
+function UPC_Scores_C:HintsVisibility(Visible) end
+---@param MyGeometry FGeometry
+---@param InKeyEvent FKeyEvent
+---@return FEventReply
+function UPC_Scores_C:OnKeyDown(MyGeometry, InKeyEvent) end
+---@param Condition boolean
+function UPC_Scores_C:HoverScore(Condition) end
+---@param IsChanged boolean
+UPC_Scores_C['Decrement Row'] = function(self, IsChanged) end
+---@param IsChanged boolean
+function UPC_Scores_C:IncrementRow(IsChanged) end
+---@param LederboardIndex int32
+function UPC_Scores_C:RefleshLeaderboard(LederboardIndex) end
+---@param Condition boolean
+function UPC_Scores_C:SetHoverOnGame(Condition) end
+---@param IsChanged boolean
+function UPC_Scores_C:decrementsFilters(IsChanged) end
+---@param IsChanged boolean
+function UPC_Scores_C:incrementsFilter(IsChanged) end
+---@param FilterType ELeaderboardDataType
+function UPC_Scores_C:RefleshScoreMinigame(FilterType) end
+---@param Condition boolean
+function UPC_Scores_C:SetHovered(Condition) end
+---@param IsHovered boolean
+function UPC_Scores_C:HoveredNearButton(IsHovered) end
+---@param IsHovered boolean
+function UPC_Scores_C:HoveredWorldButton(IsHovered) end
+---@param IsHovered boolean
+function UPC_Scores_C:HoveredFriendButton(IsHovered) end
+function UPC_Scores_C:Clicked() end
+---@param IsChanged boolean
+function UPC_Scores_C:decrementsKey(IsChanged) end
+---@param Score int32
+---@param TextScore FText
+function UPC_Scores_C:FormatTimeText(Score, TextScore) end
+function UPC_Scores_C:Refresh() end
+---@param KeyEvent FKeyEvent
+function UPC_Scores_C:TopMenuHandle(KeyEvent) end
+function UPC_Scores_C:BndEvt__Fueling_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:Construct() end
+function UPC_Scores_C:BndEvt__Throwing_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__CashRegister_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Racing_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:Destruct() end
+---@param MyGeometry FGeometry
+---@param InDeltaTime float
+function UPC_Scores_C:Tick(MyGeometry, InDeltaTime) end
+function UPC_Scores_C:DefaultLoad() end
+function UPC_Scores_C:BndEvt__Friends_Button_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__World_Button_K2Node_ComponentBoundEvent_14_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Near_Button_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__RacingSecondMap_K2Node_ComponentBoundEvent_13_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Money_K2Node_ComponentBoundEvent_16_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Popularity_K2Node_ComponentBoundEvent_17_OnButtonClickedEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__World_Button_K2Node_ComponentBoundEvent_6_OnButtonHoverEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__World_Button_K2Node_ComponentBoundEvent_7_OnButtonHoverEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Near_Button_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Near_Button_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Friends_Button_K2Node_ComponentBoundEvent_20_OnButtonHoverEvent__DelegateSignature() end
+function UPC_Scores_C:BndEvt__Friends_Button_K2Node_ComponentBoundEvent_21_OnButtonHoverEvent__DelegateSignature() end
+---@param LeaderboardName FName
+---@param bWasSuccessfull boolean
+---@param LeaderboardRows TArray<FLeaderboardData>
+function UPC_Scores_C:OnLeaderboardsReadCompleted(LeaderboardName, bWasSuccessfull, LeaderboardRows) end
+---@param Index int32
+function UPC_Scores_C:GamePadClickedMiniGame(Index) end
+---@param Index int32
+function UPC_Scores_C:GamePadClickedMiddle(Index) end
+function UPC_Scores_C:CustomEvent_0() end
+---@param EntryPoint int32
+function UPC_Scores_C:ExecuteUbergraph_PC_Scores(EntryPoint) end
+
+

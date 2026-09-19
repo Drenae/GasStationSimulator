@@ -1,0 +1,10 @@
+---@meta
+
+---@class FS_Logos
+---@field Title_21_DD173AAF45968A633BBE06A3D3C47922 FText
+---@field Image_19_9C96722A4CBCAE19C9C1189C517B3A7F UTexture2D
+---@field Size_20_1395B5E0448F1D5F61E722B131807AD7 FVector2D
+local FS_Logos = {}
+
+
+

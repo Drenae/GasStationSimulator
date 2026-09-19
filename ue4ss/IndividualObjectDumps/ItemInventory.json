@@ -1,0 +1,72 @@
+{
+   "Meta": {
+      "Address": "000001F2F2E568C0",
+      "ClassPrivate": {
+         "Address": "000001F0C767A840",
+         "Name": "InventoryComponent"
+      },
+      "NamePrivate": {
+         "Components": {
+            "ComparisonIndex": 5911041,
+            "DisplayIndex": null,
+            "Number": 0
+         },
+         "String": "ItemInventory"
+      },
+      "ObjectFlags": {
+         "Flags": [
+            "RF_Transactional",
+            "RF_Transient",
+            "RF_DefaultSubObject",
+            "RF_AllFlags"
+         ],
+         "Raw": 262216
+      },
+      "Path": "/Game/DriveableCar_basic/Maps/DemoMapka.DemoMapka:PersistentLevel.PlayerCharacter_BP_C_2147480650.ItemInventory",
+      "PlayerControlled": true,
+      "Size": {
+         "Exclusive": {
+            "ActorComponent": 136,
+            "InventoryComponent": 136,
+            "Object": 40
+         },
+         "Inclusive": {
+            "ActorComponent": 176,
+            "InventoryComponent": 312,
+            "Object": 40
+         },
+         "Total": 312
+      }
+   },
+   "Values": {
+      "AssetUserData": "",
+      "ComponentTags": "",
+      "CreationMethod": "Native",
+      "CurrentCapacity": "0",
+      "CurrentFuelCapacity": "0.000000",
+      "FuelState": "IsOk",
+      "InventoryName": "None",
+      "MaxCapacity": "100",
+      "MaxFuelCapacity": "100.000000",
+      "NotFoundItems": "",
+      "OnComponentActivated": "()",
+      "OnComponentDeactivated": "()",
+      "OnFuelStatusChanged": "()",
+      "OnFuelUpdated": "()",
+      "OnInventoryUpdated": "()",
+      "OnMoneyStatuedUpdated": "()",
+      "PrimaryComponentTick": "(TickGroup=TG_DuringPhysics,EndTickGroup=TG_PrePhysics,bTickEvenWhenPaused=False,bCanEverTick=False,bStartWithTickEnabled=True,bAllowTickOnDedicatedServer=True,TickInterval=0.000000)",
+      "Slots": "",
+      "UCSModifiedProperties": "",
+      "UCSSerializationIndex": "-1",
+      "bAutoActivate": "False",
+      "bCanEverAffectNavigation": "False",
+      "bEditableWhenInherited": "True",
+      "bIsActive": "False",
+      "bIsEditorOnly": "False",
+      "bIsPlayerStateInventory": "False",
+      "bNetAddressable": "False",
+      "bReplicates": "False",
+      "money": "0.000000"
+   }
+}

@@ -1,0 +1,15 @@
+---@meta
+
+---@class FFlipbookBrush
+---@field SourceFlipbook_18_4577C55042985081ABA49CBABF90DCD8 UPaperFlipbook
+---@field ImageSize_22_19A5BAE94CBB9B5114C0858CD77BB0F5 FVector2D
+---@field Scale_15_4632EC0243DF1429184D8382320B794F FVector2D
+---@field Tint_21_8EFEF1CD4D9D0BB077CA649A2D29FF72 FSlateColor
+---@field ['Autoplay?_9_CDD3D39F4C7FCADB8E42EE8C43C10AAF'] boolean
+---@field ['Loop?_8_791A7B3C490C927F0A1709A02813AFFB'] boolean
+---@field PlayRate_16_3E2D9DE94BA7B0E38CCDC2B24E22D3CF float
+---@field StartKeyFrame_17_55ABB3BC41CCD178419048972EBD80E7 int32
+local FFlipbookBrush = {}
+
+
+

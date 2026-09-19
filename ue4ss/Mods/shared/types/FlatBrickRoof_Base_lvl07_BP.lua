@@ -1,0 +1,111 @@
+---@meta
+
+---@class AFlatBrickRoof_Base_lvl07_BP_C : ACustomization_Roof_BP_C
+---@field SM_AirConditionFan_03 UStaticMeshComponent
+---@field SM_AirCondition_02 UStaticMeshComponent
+---@field SM_AirDuct_01_A4 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands11 UStaticMeshComponent
+---@field SM_AirDuct_01_A3 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands10 UStaticMeshComponent
+---@field SM_AirDuct_01_A15 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands9 UStaticMeshComponent
+---@field SM_AirDuct_01_A14 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands8 UStaticMeshComponent
+---@field SM_AirDuct_01_A13 UStaticMeshComponent
+---@field SM_AirDuct_01_A12 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands7 UStaticMeshComponent
+---@field SM_AirDuct_01_C6 UStaticMeshComponent
+---@field [' 4'] UStaticMeshComponent
+---@field SM_Roof_Vent_013 UStaticMeshComponent
+---@field SM_Roof_Vent_06 UStaticMeshComponent
+---@field SM_Roof_Vent_011 UStaticMeshComponent
+---@field SM_Roof_Vent_09 UStaticMeshComponent
+---@field SM_Roof_Vent_010 UStaticMeshComponent
+---@field SM_Roof_Vent_012 UStaticMeshComponent
+---@field SM_Roof_Vent_08 UStaticMeshComponent
+---@field SM_Roof_Vent_07 UStaticMeshComponent
+---@field SM_Roof_Vent_04 UStaticMeshComponent
+---@field SM_Rebar_01b5 UStaticMeshComponent
+---@field SM_Rebar_01b4 UStaticMeshComponent
+---@field SM_Rebar_01b3 UStaticMeshComponent
+---@field SM_Rebar_01b2 UStaticMeshComponent
+---@field SM_AirDuct_01_C5 UStaticMeshComponent
+---@field SM_RoofTurbine_01_Part_A3 UStaticMeshComponent
+---@field SM_RoofTurbine_01_Part_B3 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands6 UStaticMeshComponent
+---@field SM_AirDuct_01_A11 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands5 UStaticMeshComponent
+---@field SM_AirDuct_01_A10 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands UStaticMeshComponent
+---@field SM_AirConditionFan_02 UStaticMeshComponent
+---@field SM_AirDuct_01_A2 UStaticMeshComponent
+---@field SM_AirDuct_01_A1 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands1 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands4 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands3 UStaticMeshComponent
+---@field SM_AirDuct_01_Stands2 UStaticMeshComponent
+---@field SM_RoofTurbine_01_Part_B2 UStaticMeshComponent
+---@field SM_AirDuct_01_C3 UStaticMeshComponent
+---@field [' 2'] UStaticMeshComponent
+---@field SM_AirDuct_01_A9 UStaticMeshComponent
+---@field SM_Rebar_01b1 UStaticMeshComponent
+---@field SM_AirDuct_01_C4 UStaticMeshComponent
+---@field SM_Rebar_01b UStaticMeshComponent
+---@field SM_RoofTurbine_01_Part_A2 UStaticMeshComponent
+---@field SM_AirCondition_01 UStaticMeshComponent
+---@field SM_Antenna_01 UStaticMeshComponent
+---@field SM_Roof_Vent_03 UStaticMeshComponent
+---@field SM_Roof_Vent_02 UStaticMeshComponent
+---@field Antenna UStaticMeshComponent
+---@field SM_Tarp_02 UStaticMeshComponent
+---@field SM_Rebar_01a UStaticMeshComponent
+---@field SM_Spool_01a UStaticMeshComponent
+---@field SM_Cable_01_B UStaticMeshComponent
+---@field SM_trash_paper_05 UStaticMeshComponent
+---@field SM_trash_paper_wrapper_02 UStaticMeshComponent
+---@field SM_trash_paper_06 UStaticMeshComponent
+---@field SM_Debris_CinderBlock_Pile_01 UStaticMeshComponent
+---@field SM_Cable_01_A UStaticMeshComponent
+---@field SM_AirDuct_01_A8 UStaticMeshComponent
+---@field [' 3'] UStaticMeshComponent
+---@field SM_AirDuct_01_A5 UStaticMeshComponent
+---@field SM_roof_flat_pillar_brick1 UStaticMeshComponent
+---@field SM_roof_flat_pillar_brick3 UStaticMeshComponent
+---@field SM_roof_flat_pillar_brick2 UStaticMeshComponent
+---@field SM_roof_flat_pillar_brick UStaticMeshComponent
+---@field SM_TrimModule_02_500_A3 UStaticMeshComponent
+---@field SM_TrimModule_02_500_A UStaticMeshComponent
+---@field SM_TrimModule_02_250_A1 UStaticMeshComponent
+---@field SM_TrimModule_02_250_A UStaticMeshComponent
+---@field SM_TrimModule_01_500_A5 UStaticMeshComponent
+---@field SM_TrimModule_01_Corner_A3 UStaticMeshComponent
+---@field SM_TrimModule_01_250_A2 UStaticMeshComponent
+---@field SM_TrimModule_01_Corner_A4 UStaticMeshComponent
+---@field SM_TrimModule_01_250_A3 UStaticMeshComponent
+---@field SM_TrimModule_01_500_A8 UStaticMeshComponent
+---@field SM_TrimModule_01_250_A1 UStaticMeshComponent
+---@field SM_RoofModule_250_A20 UStaticMeshComponent
+---@field SM_RoofModule_250_A19 UStaticMeshComponent
+---@field SM_RoofModule_250_A18 UStaticMeshComponent
+---@field SM_RoofModule_250_A17 UStaticMeshComponent
+---@field SM_RoofModule_250_A16 UStaticMeshComponent
+---@field SM_RoofModule_250_A15 UStaticMeshComponent
+---@field SM_RoofModule_250_A10 UStaticMeshComponent
+---@field SM_RoofModule_250_A14 UStaticMeshComponent
+---@field SM_RoofModule_250_A13 UStaticMeshComponent
+---@field SM_RoofModule_250_A12 UStaticMeshComponent
+---@field SM_RoofModule_250_A11 UStaticMeshComponent
+---@field SM_RoofModule_250_A9 UStaticMeshComponent
+---@field SM_RoofModule_250_A8 UStaticMeshComponent
+---@field SM_RoofModule_250_A7 UStaticMeshComponent
+---@field SM_RoofModule_250_A2 UStaticMeshComponent
+---@field SM_RoofModule_250_A1 UStaticMeshComponent
+---@field SM_RoofModule_250_A6 UStaticMeshComponent
+---@field SM_RoofModule_250_A3 UStaticMeshComponent
+---@field SM_RoofModule_250_A5 UStaticMeshComponent
+---@field SM_RoofModule_250_A4 UStaticMeshComponent
+---@field SM_RoofModule_250_A UStaticMeshComponent
+local AFlatBrickRoof_Base_lvl07_BP_C = {}
+
+
+

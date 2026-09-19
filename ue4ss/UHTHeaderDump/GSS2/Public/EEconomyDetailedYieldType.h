@@ -1,0 +1,45 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EEconomyDetailedYieldType.generated.h"
+
+UENUM(BlueprintType)
+enum class EEconomyDetailedYieldType : uint8 {
+    PRODUCTS,
+    GAS,
+    CAR_PARTS,
+    DECORATIONS,
+    LANDMARKS,
+    UPGRADES,
+    SERVICES,
+    SALARIES,
+    FEATURES,
+    WORKSHOP,
+    CAR_WASH,
+    CARDS,
+    ICE_CREAMS,
+    TOOLS,
+    SHELVES,
+    LOAN,
+    MINIGAMES,
+    TIPS,
+    SCUBA_DIVING,
+    SURFING,
+    LOTTERY,
+    DRIVE_IN_CINEMA,
+    JUNKYARD,
+    WRECK_DELIVERIES,
+    CHEMICAL_BATH,
+    INVESTOR_SHAER,
+    SALE_FEE,
+    CAR_CONTRACTS,
+    CAR_SALES,
+    SELLING_CAR_PARTS,
+    CINEMA,
+    POPCORN,
+    TICKETS,
+    RVCAMP,
+    DELIVERY,
+    NOT_RELEVANT,
+    MAX,
+};
+

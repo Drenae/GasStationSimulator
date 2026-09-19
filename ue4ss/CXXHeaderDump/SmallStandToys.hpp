@@ -1,0 +1,26 @@
+#ifndef UE4SS_SDK_SmallStandToys_HPP
+#define UE4SS_SDK_SmallStandToys_HPP
+
+class ASmallStandToys_C : public A00_Stand_C
+{
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x06E0 (size: 0x8)
+    class USplineComponent* Spline44;                                                 // 0x06E8 (size: 0x8)
+    class USplineComponent* Spline42;                                                 // 0x06F0 (size: 0x8)
+    class USplineComponent* Spline40;                                                 // 0x06F8 (size: 0x8)
+    class USplineComponent* Spline39;                                                 // 0x0700 (size: 0x8)
+    class USplineComponent* Spline36;                                                 // 0x0708 (size: 0x8)
+    class USplineComponent* Spline34;                                                 // 0x0710 (size: 0x8)
+    class USplineComponent* Spline32;                                                 // 0x0718 (size: 0x8)
+    class USplineComponent* Spline31;                                                 // 0x0720 (size: 0x8)
+    class USplineComponent* Spline28;                                                 // 0x0728 (size: 0x8)
+    class USplineComponent* Spline27;                                                 // 0x0730 (size: 0x8)
+    class USplineComponent* Spline25;                                                 // 0x0738 (size: 0x8)
+    class USplineComponent* Spline23;                                                 // 0x0740 (size: 0x8)
+
+    void ReceiveBeginPlay();
+    void ReceiveDestroyed();
+    void ReceiveTick(float DeltaSeconds);
+    void ExecuteUbergraph_SmallStandToys(int32 EntryPoint);
+}; // Size: 0x748
+
+#endif

@@ -1,0 +1,21 @@
+---@meta
+
+---@class ABP_JunkyardWorkshop_Metal_Roof_lvl_01_a_C : AActor
+---@field Custom_HierarchicalInstances_1000_C_13 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_12 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_11 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_10 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_9 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_8 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_7 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_6 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_5 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_4 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_3 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_2 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_1 UCustom_HierarchicalInstances_1000_C
+---@field Custom_HierarchicalInstances_1000_C_0 UCustom_HierarchicalInstances_1000_C
+local ABP_JunkyardWorkshop_Metal_Roof_lvl_01_a_C = {}
+
+
+
